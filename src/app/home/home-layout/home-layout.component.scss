@@ -1,0 +1,23 @@
+.top-sec{
+    height: 19.3rem;
+}
+
+.carousel{
+    margin-top: 1rem;
+}
+.newSong{
+    max-height: 17rem;
+    overflow-y: scroll;
+}
+
+.newSong::-webkit-scrollbar {
+    display: none;
+}
+
+.artist-tab{
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+}

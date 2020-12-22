@@ -1,1 +1,121 @@
 /* You can add global styles to this file, and also import other style files */
+@import "src/app/theme/variable.scss";
+
+
+.bg-grey{
+    background-color: #f4f6f8;
+}
+
+.font1{
+    font-size: .8rem !important;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+h6{
+    color: $textGrey;
+    font-size: .8rem !important;
+}
+h5{
+    font-size: .8rem;
+    color: $primaryText;
+}
+
+h4{
+    font-size: 1rem;
+    color: $primaryText;
+}
+
+h3{
+    color: $primaryText;
+}
+
+h1{
+    color: $primaryText;
+}
+
+button{
+    border-radius: 2rem;
+    background-color: $primaryColor;
+    border: 0;
+    color: white;
+    font-size: .8rem;
+    font-weight: 700;
+    padding: .4rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+
+
+// tab css
+.catTab{
+    // border: 0 !important;
+    border-width: 0 !important;
+    border-bottom-width: 1.5px !important;
+    border-color: $grey !important;
+    z-index: 9;
+}
+
+.tab .nav-tabs {
+    border: none;
+    margin: 0;
+    font-size: 1.0rem;
+  }
+  
+  .tab .nav-tabs li a {
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: $primaryText;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .tab .nav-tabs li a:after {
+    content: "";
+    height: 3px;
+    margin-bottom: -1.5px;
+    font-weight: bold;
+    background: $primaryColor;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 99;
+    transition: all 1s ease 0s;
+  }
+  
+  // .tab .nav-tabs a:after,
+  .tab .nav-tabs li a.active,
+  .tab .nav-tabs li:hover a:after,
+  .tab .nav-tabs li a.active:after {
+    
+    width: 100%;
+    opacity: 1;
+  }
+  .tab .nav-tabs li a.active{
+      background-color: transparent;
+  }
+  
+  .tab {
+    overflow: hidden;
+    overflow-x: scroll !important;
+    white-space: nowrap;
+  }
+  
+  .tab::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .category-tabs {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  
+  }

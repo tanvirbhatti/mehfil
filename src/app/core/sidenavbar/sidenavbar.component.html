@@ -1,0 +1,37 @@
+<nav class="navbar flex-column shadow-sm d-flex fixed-left sidebar mobile-hid p-2">
+    <ul class="nav nav-tabs border-0">
+        <li class="nav-item logo-holder">
+            <div class="text-center logo mx-3 mb-1"><a class=" text-decoration-none" id="title"
+                    [routerLink]="['/home']"><img src="./assets/mehfil.png" class="logo"></a>
+                <!-- <a class=" float-right" id="sidebarToggleHolder"
+                href="#"><i class="fas fa-bars" id="sidebarToggle"></i></a> -->
+            </div>
+        </li>
+        <h6 class="">MUSIC</h6>
+        <li class="nav-item"><a class="nav-link active text-left text-white py-1 px-0" data-toggle="tab" role="tab"
+                aria-selected="false" [routerLink]="['/home']"><i class="fas fa-home mx-3"></i><span
+                    class="text-nowrap font1 mx-2">Home</span></a></li>
+        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" data-toggle="tab" role="tab"
+                aria-selected="false" [routerLink]="['/viewallsongs']"><i class="fas fa-music mx-3"></i><span
+                    class="text-nowrap font1 mx-2">Songs</span></a></li>
+        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" data-toggle="tab" role="tab"
+                aria-selected="false" [routerLink]="['/viewallartist']"><i class="far fa-user mx-3"></i><span
+                    class="text-nowrap font1 mx-2">Artist</span></a></li>
+        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" data-toggle="tab" role="tab"
+                aria-selected="false" [routerLink]="['/viewallalbums']"><i class="fas fa-book mx-3"></i><span
+                    class="text-nowrap font1 mx-2">Albums</span></a></li>
+        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" data-toggle="tab" role="tab"
+                aria-selected="false" [routerLink]="['/liked']"><i class="far fa-heart mx-3"></i><span
+                    class="text-nowrap font1 mx-2">Liked</span></a></li>
+
+        <h6 class="mt-4">PLAYLISTS</h6>
+        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" data-toggle="tab" role="tab"
+                aria-selected="false" [routerLink]="['/viewplaylist']"><i class="fa fa-list-ul mx-3"></i><span
+                    class="text-nowrap font1 mx-2">Playlist 1</span></a></li>
+        <div class="newplaylist"><a class="text-left text-white py-1 px-0 nav-link border-0" [routerLink]="['/viewplaylist']"><i class="fa fa-plus mx-3"></i><span
+                    class="text-nowrap font1 mx-2">Add new</span></a></div>
+
+
+    </ul>
+
+</nav>

@@ -1,0 +1,18 @@
+<div>
+    <h3>Artists</h3>
+    <div class="d-flex justify-content-center mt-2 p-0 catTab border">
+        <div class="tab" role="tabpanel">
+            <ul class="nav nav-tabs category-tabs " role="tablist">
+                <li class="" data-target="#custom_carousel"
+                    *ngFor='let tab of ["Punjabi","Hindi","English"];let j =index'>
+                    <a class="" [ngClass]="[j==0 ? 'nav-link active' : 'nav-link ']" id='' data-toggle="tab" role="tab"
+                        aria-selected="false">{{tab}}</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mt-3 row ">
+        <app-artist-card class="col-2" *ngFor='let i of [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]'></app-artist-card>
+    </div>
+</div>

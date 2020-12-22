@@ -1,0 +1,56 @@
+@import "src/app/theme/variable.scss";
+
+
+.search-bar{
+    // position: relative;
+    width: 100%;
+    margin-right: 0px !important;
+  }
+  
+  .site-search{
+    display: flex;
+    // position: absolute;
+    width: 100%;
+    
+    a{
+      cursor: default;
+    }
+  }
+  .search-div{
+    background-color:white ;
+    border-radius:  2rem;
+    border-color: $grey !important;
+  }
+  
+  .search-icon{
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+  
+    i{
+      color:$grey;
+    }
+  }
+  
+  .searchInput {
+    background-color: transparent;
+    width: 100%;
+    box-shadow: none;
+    border-width: 0;
+    margin-right: 0;
+      }
+::placeholder { 
+    color: $textGrey;
+}
+
+.guestIcon{
+  // border-radius: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: $grey !important;
+  color: $grey;
+}

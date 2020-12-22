@@ -1,0 +1,22 @@
+<div class="">
+    <div class="row top-sec  p-0 m-0">
+        <div class="col-7 row  m-0 p-0 align-items-top">
+            <h4 class="float-left m-0">Trending now</h4>
+            <app-carousel class="carousel"></app-carousel>
+        </div>
+        <div class="col-5 row m-0 p-0 pl-4  ">
+            <h4 class="float-left  m-0 d-flex ">New Release</h4>
+            <div class=" w-100 h-100 mt-3 newSong ">
+                <app-song-card class=" w-100 d-flex mb-2" *ngFor='let i of [1,2,3,4,3,4,5]'></app-song-card>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <app-view-tab ></app-view-tab>
+    <app-song-card-big></app-song-card-big>
+    <!-- <app-view-tab ></app-view-tab> -->
+    <!-- <app-view-tab [type]='"playlist"' [heading]='"Popular playlist"'></app-view-tab> -->
+    <!-- <app-playlist-card></app-playlist-card> -->
+</div>

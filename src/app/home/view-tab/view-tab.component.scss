@@ -1,0 +1,28 @@
+@import "src/app/theme/variable.scss";
+
+
+.tab{
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+.tab::-webkit-scrollbar {
+    display: none;
+  }
+
+
+i{
+    font-size: 1.5rem;
+    color: $grey;
+}
+
+h5{
+    color: $textGrey2;
+}
+// .headingRow{
+//     border: 0px ,0px ,0px;
+//     border-bottom-width: 2px !important;
+//     border-color: yellow !important;
+// }

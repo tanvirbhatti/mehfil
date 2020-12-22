@@ -1,0 +1,27 @@
+@import "src/app/theme/variable.scss";
+
+.card{
+    overflow: hidden;
+    // border-radius: 1rem;
+}
+.image{
+    // overflow: hidden;
+    height: 13rem;
+    width: 22rem;
+    object-fit: cover;
+//     border-top-left-radius: 1rem;
+//     border-top-right-radius: 1rem;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+.card{
+    max-width: 22rem;
+    background-color: transparent;
+}
+
+.card-body{
+    background: transparent;
+}
