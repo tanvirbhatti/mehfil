@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-playlist-card',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./playlist-card.component.scss']
 })
 export class PlaylistCardComponent implements OnInit {
-
-  constructor() { }
+@Input() data
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
+  }
+  navigateto(x){
+    this.route.navigate(['/viewplaylist', JSON.stringify(x)]);
+    // console.log(this.data)
+    // console.log(x)
   }
 
 }

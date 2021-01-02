@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SongsService} from '../../service/songs.service'
-import {artist} from 'src/app/service/module/policy.model'
+import {artist} from 'src/app/service/module/audio.module'
 
 @Component({
   selector: 'app-view-all-artist',
@@ -15,14 +15,16 @@ export class ViewAllArtistComponent implements OnInit {
   constructor(private getartistdata:SongsService) { }
 
   ngOnInit(){
-    this.getartistdata.getartist().subscribe(data => {
+    this.artists('Punjabi')
+  }
+   artists(x){
+    this.getartistdata.getartist(x).subscribe(data => {
       this.artistdata = data.map(e => {
         return {
           id: e.payload.doc.id,
-          ...e.payload.doc.data() as {}
-        } as artist;
+          ...e.payload.doc.data()  as artist
+        }
       })
     });
-  }
-
+   }
 }

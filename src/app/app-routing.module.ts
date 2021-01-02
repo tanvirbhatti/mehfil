@@ -19,6 +19,7 @@ const routes: Routes = [
   { path:'viewallartist', component:ViewAllArtistComponent},
   {path:'liked', component:LikedComponent},
   {path:'viewplaylist', component:ViewPlaylistComponent},
+  {path:'viewplaylist/:data', component:ViewPlaylistComponent},
 ];
 
 @NgModule({

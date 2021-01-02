@@ -2,12 +2,12 @@
     <div class="row no-gutters w-100 justify-content-between p-1">
         <div class="row m-0 align-items-center">
             <div class="image ">
-                <img src="https://i.scdn.co/image/7a5fdcf968630a28583dd0613bc4735b6ad6a6b6" class="card-img " alt="...">
+                <img src={{data.picUrl}} class="card-img " alt="...">
             </div>
             <div class="row song m-0 justify-content-between">
                 <div class="card-body p-0 ml-2">
-                    <h5 class=" m-0">Song name</h5>
-                    <h6 class="m-0">Sidhu moosewala </h6>
+                    <h5 class=" m-0">{{data.name}}</h5>
+                    <h6 class="m-0">{{data.singer}} </h6>
                     <p class=" m-0"><small class="text-muted m-0">04:24</small></p>
                 </div>
             </div>
@@ -22,13 +22,3 @@
         </div>
     </div>
 </div>
-<!-- <div *ngFor='let song of songData'>
-    {{song.singer}}
-    {{song.songname}}
-    {{song.songID}}
-    {{song.picId}}
-    {{song.id}}
-    {{song.language}}
-    {{song.tags}}
-</div> -->
-<!-- <audio controls class="w-100 "><source class="bg-danger" src="./assets/Banned - Ranjit Bawa (DjPunjab.Com).mp3"></audio> -->

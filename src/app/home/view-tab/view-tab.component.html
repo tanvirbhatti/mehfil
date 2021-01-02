@@ -1,18 +1,19 @@
 <div class="mt-4 ">
     <div class="row justify-content-between m-0  headingRow">
-        <h4 class="m-0">{{data.heading}}</h4>
+        <h4 class="m-0">{{this.heading}}</h4>
         <div class=" row align-items-center d-flex m-0">
             <a href="#"><i class="fa fa-angle-left mr-3"></i></a>
             <a href="#"><i class="fa fa-angle-right mr-4"></i></a>
-            <a href="#" class=""><h5>View all</h5></a>
+            <!-- <a href="#" class=""><h5>View all</h5></a> -->
         </div>
     </div>
     <div class="mt-4">
         <ul class="tab nav">
-            <li *ngFor='let i of data.typedata' class="ml-3">
-                <app-artist-card *ngIf='i == "artist"'></app-artist-card>
-                <app-album-card *ngIf='i == "album"'></app-album-card>
-                <app-playlist-card *ngIf='i == "playlist"'></app-playlist-card>
+            <li *ngFor='let i of this.data' class="ml-3">
+                <app-artist-card *ngIf='i.type == "artist"' ></app-artist-card>
+                <app-album-card *ngIf='i.type == "album"'></app-album-card>
+                <app-playlist-card *ngIf='i.type == "playlist"'></app-playlist-card>
+                <app-song-card-big *ngIf='i.type == "song"'></app-song-card-big>
             </li>
         </ul>
     </div>

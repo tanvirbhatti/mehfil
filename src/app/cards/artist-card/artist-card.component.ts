@@ -1,4 +1,5 @@
 import { Component, OnInit ,Input} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-artist-card',
@@ -6,12 +7,16 @@ import { Component, OnInit ,Input} from '@angular/core';
   styleUrls: ['./artist-card.component.scss']
 })
 export class ArtistCardComponent implements OnInit {
-  @Input() name;
-  @Input() picUrl
+  @Input() data;
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
+  }
+  navigateto(x){
+    this.route.navigate(['/viewplaylist', JSON.stringify(x)]);
+    // console.log(this.data)
+    // console.log(x)
   }
 
 }

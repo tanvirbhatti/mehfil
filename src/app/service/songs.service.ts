@@ -9,11 +9,21 @@ export class SongsService {
 
   constructor(private firestore: AngularFirestore) { }
 
-  getsongs() {
-    return this.firestore.collection('songs').snapshotChanges();
+  getsongs(x) {
+    return this.firestore.collection('songs').doc('language').collection(x).snapshotChanges();
+}
+getsong(x){
+  return this.firestore.collection('playlists').doc(x).collection('songs').snapshotChanges();
+
 }
 
-getartist(){
-  return this.firestore.collection('Artists').snapshotChanges();
+getartist(x){
+  return this.firestore.collection('Artists').doc('language').collection(x).snapshotChanges();
+}
+getplaylist(x){
+  return this.firestore.collection('playlists').snapshotChanges();
+}
+getgroup(x){
+  return this.firestore.collection('Group').doc(x).collection('data').snapshotChanges();
 }
 }

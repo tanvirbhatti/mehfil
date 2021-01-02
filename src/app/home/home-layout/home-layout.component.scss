@@ -1,3 +1,6 @@
+@import "src/app/theme/variable.scss";
+
+
 .top-sec{
     height: 19.3rem;
 }
@@ -20,4 +23,21 @@
     white-space: nowrap;
     -ms-flex-wrap: nowrap !important;
   flex-wrap: nowrap !important;
+}
+
+.tab{
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+.tab::-webkit-scrollbar {
+    display: none;
+  }
+
+
+i{
+    font-size: 1.5rem;
+    color: $grey;
 }

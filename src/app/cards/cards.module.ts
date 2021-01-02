@@ -6,13 +6,16 @@ import { SongCardComponent } from './song-card/song-card.component';
 import { PlaylistCardComponent } from './playlist-card/playlist-card.component';
 import { SongCardBigComponent } from './song-card-big/song-card-big.component';
 import { PlaylistSongCardComponent } from './playlist-song-card/playlist-song-card.component';
+import { Router, RouterModule } from '@angular/router';
+
 
 
 
 @NgModule({
   declarations: [ArtistCardComponent, AlbumCardComponent, SongCardComponent, PlaylistCardComponent, SongCardBigComponent, PlaylistSongCardComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports:[
     ArtistCardComponent,

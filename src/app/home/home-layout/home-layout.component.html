@@ -6,17 +6,66 @@
         </div>
         <div class="col-5 row m-0 p-0 pl-4  ">
             <h4 class="float-left  m-0 d-flex ">New Release</h4>
+            <!-- <p>{{this.songdata.name}}</p> -->
             <div class=" w-100 h-100 mt-3 newSong ">
-                <app-song-card class=" w-100 d-flex mb-2" *ngFor='let i of [1,2,3,4,3,4,5]'></app-song-card>
+                <div  *ngFor='let i of this.songdata'>
+                    <app-song-card [data]=i></app-song-card>
+                </div>
             </div>
         </div>
     </div>
     <div>
 
     </div>
-    <app-view-tab ></app-view-tab>
-    <app-song-card-big></app-song-card-big>
-    <!-- <app-view-tab ></app-view-tab> -->
-    <!-- <app-view-tab [type]='"playlist"' [heading]='"Popular playlist"'></app-view-tab> -->
-    <!-- <app-playlist-card></app-playlist-card> -->
+    <div class="mt-4 ">
+        <div class="row justify-content-between m-0  headingRow">
+            <h4 class="m-0">Trending Artists</h4>
+            <div class=" row align-items-center d-flex m-0">
+                <a href="#"><i class="fa fa-angle-left mr-3"></i></a>
+                <a href="#"><i class="fa fa-angle-right mr-4"></i></a>
+            </div>
+        </div>
+        <div class="mt-4">
+            <ul class="tab nav">
+                <li *ngFor='let i of this.Artistdata' class="ml-3">
+                    <app-artist-card [data]=i></app-artist-card>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-4 ">
+        <div class="row justify-content-between m-0  headingRow">
+            <h4 class="m-0">Playlists for you</h4>
+            <div class=" row align-items-center d-flex m-0">
+                <a href="#"><i class="fa fa-angle-left mr-3"></i></a>
+                <a href="#"><i class="fa fa-angle-right mr-4"></i></a>
+            </div>
+        </div>
+        <div class="mt-4">
+            <ul class="tab nav">
+                <li *ngFor='let i of this.playlistdata' class="ml-3">
+                    <app-playlist-card [data]=i></app-playlist-card>
+                </li>
+            </ul>
+        </div>
+    </div>   
+       
+    <div class="mt-4 ">
+        <div class="row justify-content-between m-0  headingRow">
+            <h4 class="m-0">Recommended Songs</h4>
+            <div class=" row align-items-center d-flex m-0">
+                <a href="#"><i class="fa fa-angle-left mr-3"></i></a>
+                <a href="#"><i class="fa fa-angle-right mr-4"></i></a>
+            </div>
+        </div>
+        <div class="mt-4">
+            <ul class="tab nav">
+                <li *ngFor='let i of this.songdata2' class="ml-3">
+                    <app-song-card-big [data]=i></app-song-card-big>
+                </li>
+            </ul>
+        </div>
+    </div>   
+    
+    
 </div>

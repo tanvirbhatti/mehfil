@@ -6,7 +6,7 @@
                 <li class="" data-target="#custom_carousel"
                     *ngFor='let tab of ["Punjabi","Hindi","English"];let j =index'>
                     <a class="" [ngClass]="[j==0 ? 'nav-link active' : 'nav-link ']" id='' data-toggle="tab" role="tab"
-                        aria-selected="false">{{tab}}</a>
+                        aria-selected="false" (click)="artists(tab)">{{tab}}</a>
                 </li>
 
             </ul>
@@ -14,7 +14,7 @@
     </div>
     <div class="mt-3 row ">
         <div *ngFor='let i of this.artistdata' class="col-2">
-            <app-artist-card  [name]=i.name [picUrl]=i.picUrl></app-artist-card>
+            <app-artist-card  [data]=i></app-artist-card>
         </div>
     </div>
 </div>
